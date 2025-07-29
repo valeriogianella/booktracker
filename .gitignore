@@ -1,0 +1,7 @@
+# Dependencies
+.pytest_cache/
+.vscode/
+build/
+logs/
+*__pycache__/
+*venv*

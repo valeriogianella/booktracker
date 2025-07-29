@@ -1,0 +1,36 @@
+[tool.briefcase]
+project_name = "Booktrack"
+bundle = "com.valerio.booktrack"
+version = "1.0.0"
+description = "A reading time tracking application"
+sources = ["src/booktrack"]
+license.file = "LICENSE"
+
+[tool.briefcase.app.booktrack]
+formal_name = "Booktrack"
+description = "Track your reading time and manage your book library"
+long_description = """
+Booktrack is an application that helps users keep track of their reading time by logging the time spent reading books.
+Features include book management, reading session timers, and statistics visualization.
+"""
+requires = [
+    "toga>=0.4.0",
+]
+
+[tool.briefcase.app.booktrack.android]
+requires = [
+    "toga-android>=0.4.0",
+]
+build_gradle_dependencies = [
+    "androidx.appcompat:appcompat:1.6.1",
+    "androidx.constraintlayout:constraintlayout:2.1.4", 
+    "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0",
+]
+template = "https://github.com/beeware/briefcase-android-gradle-template"
+
+[build-system]
+requires = [
+    "setuptools>=45",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
