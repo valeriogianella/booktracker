@@ -4,7 +4,6 @@ bundle = "com.valerio.booktrack"
 version = "1.0.0"
 description = "A reading time tracking application"
 sources = ["src/booktrack"]
-license.file = "LICENSE"
 
 [tool.briefcase.app.booktrack]
 formal_name = "Booktrack"
